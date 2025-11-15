@@ -2,17 +2,38 @@
 <html>
 <head>
     <title>My Personal Portfolio</title>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: left;
-    margin: 100px;
-}
-
-h1, h2 {
-    color: #005A9C;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #005A9C;
+        }
+        img {
+            border-radius: 8px;
+            max-width: 150px; 
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .media-container {
+            margin-bottom: 20px;
+        }
+        .video-wrapper {
+            max-width: 100%;
+        }
+        iframe, audio, video {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        audio, video {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -55,10 +76,12 @@ h1, h2 {
             Your browser does not support the video element.
         </video>
     </div>
-    <h2>Somthing fun</h2>
-    <img src="giphy.jpg"
-             width="150" alt="Happy">
+    
+    <h2>Something Fun</h2>
+    <a href="giphy.jpg" target="_blank">
+        <img src="giphy.jpg"
+             width="150" alt="Happy GIF image">
+    </a>
+
 </body>
 </html>
-
-
